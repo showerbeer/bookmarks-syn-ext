@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Bookmarks Sync",
+    "version": "1.0",
+    "description": "Sync bookmarks to REST endpoint",
+    "homepage_url": "https://github.com/showerbeer/bookmarks-syn-ext",
+    "icons": {
+        "48": "icons/star-filled.png",
+        "96": "icons/star-filled@2x.png"
+    },
+
+    "permissions": [
+        "bookmarks"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/star-filled@2x.png",
+        "default_title": "Sync now"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    }
+
+}
