@@ -10,16 +10,22 @@
     },
 
     "permissions": [
-        "bookmarks"
+        "bookmarks",
+        "storage"
     ],
+
+    "options_ui": {
+        "page": "options.html"
+    },
 
     "browser_action": {
         "default_icon": "icons/star-filled@2x.png",
-        "default_title": "Sync now"
+        "default_title": "Sync it",
+        "default_popup": "options.html",
+        "browser_style": true
     },
 
     "background": {
-        "scripts": ["background.js"]
+        "page": "background.js"
     }
-
 }

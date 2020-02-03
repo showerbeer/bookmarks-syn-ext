@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <input type="checkbox" name="syncWithDopbox" id="syncWithDopbox">
+    <div class="syncWithDopbox" style="display: none;">
+        <a href="#">Auth Dropbox now</a>
+    </div>
+
+    <input type="checkbox" name="syncWithGoogleDrive" id="syncWithGoogleDrive">
+    <div class="syncWithGoogleDrive" style="display: none;">
+        <a href="#">Auth Google Drive now</a>
+    </div> 
+
+    <input type="checkbox" name="syncWithRest" id="syncWithRest">
+    <div class="syncWithRest" style="display: none;">
+        <h2>Enter URL for your REST endpoint</h2>
+        <h3>Your bookmarks will be serialised and sent using HTTP POST to your specified endpoint</h3>
+        <input id="restEndpoint" />
+        <button class="btn" id="setRestEndpoint">Submit</button>
+    </div>
+    
+    <script src="/lib/jquery.min.js"></script>
+    <script src="options.js"></script>
+</body>
+
+</html>
